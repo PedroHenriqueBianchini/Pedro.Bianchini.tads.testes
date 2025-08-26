@@ -1,12 +1,13 @@
 # Pedro.Bianchini.tads.testesSistema de Cadastro com Persistência em JSON
 O sistema tem como objetivo cadastrar pessoas, armazenar seus dados em arquivos no formato JSON e permitir a recuperação posterior, garantindo persistência dos dados.
-3. Diagrama de Contexto (A-0)
+
+    Diagrama de Contexto (A-0)
 Entrada (I): Dados do usuário (nome, idade).
 Controle (C): Regras de cadastro (campos obrigatórios, formato do JSON).
 Mecanismo (M): Programa em Java, usuário que fornece dados, arquivos no disco.
 Saída (O): Arquivo pessoas.json atualizado e listagem de cadastros.
  
-4. Descrição dos Processos (Decomposição em funções A0, A1, A2...)
+    Descrição dos Processos (Decomposição em funções A0, A1, A2...)
 Função A1 – Cadastrar Pessoa
 •	I: Nome, idade digitados pelo usuário.
 •	C: Regras de validação (idade > 0).
