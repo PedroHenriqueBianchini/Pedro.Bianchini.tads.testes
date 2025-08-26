@@ -20,7 +20,7 @@ public class Main {
                     String nome = sc.nextLine();
                     System.out.print("Idade: ");
                     int idade = sc.nextInt();
-                    sc.nextLine();
+                   
 
                     cadastro.adicionar(new Pessoa(nome, idade));
                     break;
