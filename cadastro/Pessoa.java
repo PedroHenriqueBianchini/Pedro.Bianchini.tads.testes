@@ -30,8 +30,17 @@ public class Pessoa {
             String[] chaveValor = campo.split(":");
             String chave = chaveValor[0].replace("\"", "").trim();
             String valor = chaveValor[1].replace("\"", "").trim();
-
-            
+             switch (chave) {
+                case "nome":
+                    nome = valor;
+                    break;
+                case "idade":
+                    idade = Integer.parseInt(valor);
+                    break;
+            }
+        }
+        return new Pessoa(nome, idade);
+    }
     @Override
     public String toString() {
         return nome + " (" + idade + " anos) ";
